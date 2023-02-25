@@ -1,0 +1,33 @@
+.bg-body-tertiary {
+    background-color: black !important;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.card {
+    margin-top: 10px;
+    border-radius: 15px;
+    border-width: 2px !important;
+}
+
+.mb-3 label {
+    width: 100px;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+.icons a {
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+}
