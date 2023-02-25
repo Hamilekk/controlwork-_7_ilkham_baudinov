@@ -1,10 +1,7 @@
 .bg-body-tertiary {
-    background-color: black !important;
+    background-color: darkgray !important;
 }
 
-.navbar-brand {
-    color: white;
-}
 
 .card {
     margin-top: 10px;
@@ -26,6 +23,7 @@
     display: flex;
     align-items: center;
 }
+
 .icons a {
     color: black;
     font-size: 35px;

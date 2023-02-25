@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}Create{% endblock %}</title>
 </head>
 <body>
 
@@ -17,20 +17,7 @@
                     </div>
                     <div class="card-body">
                         <form method="post">
-                            {% csrf_token %}
-                            <div class="mb-3">
-                                <label for="{{ form.name.id_for_label }}" class="form-label">ФИО гостя</label>
-                                {{ form.name }}
-                            </div>
-                            <div class="mb-3">
-                                <label for="{{ form.email.id_for_label }}" class="form-label">Почта гостя</label>
-                                {{ form.email }}
-                            </div>
-                            <div class="mb-3">
-                                <label for="{{ form.text.id_for_label }}" class="form-label">Описание</label>
-                                {{ form.text }}
-                            </div>
-                            <button type="submit" class="btn btn-primary">Добавить</button>
+                            {% include 'partial/guest_partial.html' with button_text='Добавить' %}
                         </form>
                     </div>
                 </div>
