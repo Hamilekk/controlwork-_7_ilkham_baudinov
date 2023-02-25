@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Delete{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <h5 class="card-title">Подтверждение удаления гостя</h5>
+            <p class="card-text">Вы уверены, что хотите удалить информацию о госте "{{ guest.name }}"?</p>
+            <form method="post" action="{% url 'guest_delete_confirm' guest.pk %}">
+                {% csrf_token %}
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-danger mr-2">
+                        <i class="fas fa-trash-alt mr-2"></i>Удалить
+                    </button>
+                    <a href="{% url 'index' %}" class="btn btn-primary">
+                        <i class="fas fa-times mr-2"></i>Отмена
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

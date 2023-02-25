@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse
 
 from webapp.forms import GuestForms
 from webapp.models import GuestBook
@@ -37,4 +38,15 @@ def guest_edit(request, pk):
             'text': guest.text,
         }
         form = GuestForms(initial=guest_data)
-    return render(request, 'edit_guest.html', {'form': form})
+    return render(request, 'guest_edit.html', {'form': form})
+
+
+def guest_delete(request, pk):
+    guest = get_object_or_404(GuestBook, pk=pk)
+    return render(request, 'guest_delete.html', {'guest': guest})
+
+
+def guest_delete_confirm(request, pk):
+    guest = get_object_or_404(GuestBook, pk=pk)
+    guest.delete()
+    return redirect(reverse('index'))
