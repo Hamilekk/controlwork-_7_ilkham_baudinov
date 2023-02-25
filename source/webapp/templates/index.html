@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+{% block menu %}
+    <a class="navbar-brand" href="{% url 'create_guest' %}">Добавить гостя</a>
+{% endblock %}
+{% block content %}
+    <h1 class="text-center mb-5">Гостевая книга</h1>
+    <div class="container">
+        <div class="row">
+            {% for guest in guests %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ guest.name }} ({{ guest.email }})</h5>
+                            <p class="card-text">{{ guest.text }}</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="icons">
+                                <a href="create_guest/" target="_new">
+                                    <i class="bi bi-file-earmark-plus-fill"></i>
+                                </a>
+                                <a href="https://www.example.com" target="_update">
+                                    <i class="bi bi-file-diff-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>
+
+<a href="https://www.example.com" target="_update">
+    <i class="bi bi-file-diff-fill"></i>
+</a>
+
+<a href="create_guest/" target="_new">
+    <i class="bi bi-file-earmark-plus-fill"></i>
+</a>
