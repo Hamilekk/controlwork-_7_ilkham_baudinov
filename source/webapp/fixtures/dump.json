@@ -1,0 +1,128 @@
+[
+{
+  "model": "webapp.guestbook",
+  "pk": 1,
+  "fields": {
+    "name": "John Doe",
+    "email": "John_Doe_ru@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T05:49:26.658Z",
+    "updated_at": "2023-02-25T05:49:26.658Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 2,
+  "fields": {
+    "name": "Bob Chetkins",
+    "email": "Bob_Chet@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda autem beatae commodi, deleniti doloremque eveniet, exercitationem facere fugiat hic illo iusto, mollitia perspiciatis quaerat reprehenderit saepe totam. Est nesciunt optio quidem sapiente vero! Dicta expedita minus sed sequi similique?",
+    "created_at": "2023-02-25T05:52:18.671Z",
+    "updated_at": "2023-02-25T05:52:18.671Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 3,
+  "fields": {
+    "name": "Jerry Junior",
+    "email": "JerryJunior@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T05:54:35.753Z",
+    "updated_at": "2023-02-25T05:54:35.753Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 4,
+  "fields": {
+    "name": "Luis Suarez",
+    "email": "Suarez9@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T05:55:35.118Z",
+    "updated_at": "2023-02-25T05:55:35.118Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 5,
+  "fields": {
+    "name": "Alexsandr Lee",
+    "email": "LeeIya@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T05:56:14.529Z",
+    "updated_at": "2023-02-25T05:56:14.529Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 6,
+  "fields": {
+    "name": "Viktor Legus",
+    "email": "Legus1990@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T05:57:00.838Z",
+    "updated_at": "2023-02-25T05:57:00.838Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 7,
+  "fields": {
+    "name": "Ilkham baudinov",
+    "email": "sdsd@example.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T07:46:07.361Z",
+    "updated_at": "2023-02-25T07:46:07.361Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 9,
+  "fields": {
+    "name": "Mich Roteda",
+    "email": "dasads@example.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet expedita in nam nemo non quidem quo sint soluta! Ab, adipisci architecto autem cumque, deserunt dolorem et eum eveniet facere harum illo non odit quas quos sed soluta ut!\n",
+    "created_at": "2023-02-25T07:49:17.643Z",
+    "updated_at": "2023-02-25T07:49:17.643Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 10,
+  "fields": {
+    "name": "Kali Houp",
+    "email": "Hoper@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem eligendi, et incidunt minima natus nihil nisi nulla odio quaerat quasi quod sapiente temporibus? Dolorum labore placeat sunt tempore? Animi ea in nostrum porro quam sapiente sed ullam vel vero?",
+    "created_at": "2023-02-25T08:59:22.805Z",
+    "updated_at": "2023-02-25T08:59:22.805Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$XqFarbxMYVMrstJuvlR3iP$lm8CoerHwX8BXZPmLq1jlLk8nYj2OU3GiPQjXqz+zdI=",
+    "last_login": "2023-02-25T05:48:31.194Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-25T05:42:53.802Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
