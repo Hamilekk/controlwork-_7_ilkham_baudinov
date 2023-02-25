@@ -1,8 +1,24 @@
-.bg-body-tertiary {
-    background-color: darkgray !important;
+body {
+    background-image: url("https://top-fon.com/uploads/posts/2022-09/1663860953_1-top-fon-com-p-serii-fon-html-foto-1.jpg");
+    background-repeat: no-repeat;
 }
 
-.justify-content-end a{
+.bg-body-tertiary {
+    background-image: url("https://top-fon.com/uploads/posts/2022-09/1663860953_1-top-fon-com-p-serii-fon-html-foto-1.jpg");
+    background-repeat: no-repeat;
+}
+
+.mb-5 {
+    color: white;
+    border: 5px black;
+
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.justify-content-end a {
     margin-left: 5px;
 }
 
