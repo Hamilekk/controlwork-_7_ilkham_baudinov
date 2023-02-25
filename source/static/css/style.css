@@ -2,6 +2,9 @@
     background-color: darkgray !important;
 }
 
+.justify-content-end a{
+    margin-left: 5px;
+}
 
 .card {
     margin-top: 10px;

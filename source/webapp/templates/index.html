@@ -22,10 +22,10 @@
                         </div>
                         <div class="card-footer d-flex justify-content-between align-items-center">
                             <div class="icons">
-                                <a href="{% url 'edit_guest' guest.pk %}" target="_new">
+                                <a href="{% url 'edit_guest' guest.pk %}" target="edit">
                                     <i class="bi bi-file-earmark-plus-fill"></i>
                                 </a>
-                                <a href="https://www.example.com" target="_update">
+                                <a href="{% url 'guest_delete' guest.pk%}" target="delete">
                                     <i class="bi bi-trash-fill"></i>
                                 </a>
                             </div>
@@ -39,11 +39,3 @@
 {% endblock %}
 </body>
 </html>
-
-<a href="https://www.example.com" target="_update">
-    <i class="bi bi-file-diff-fill"></i>
-</a>
-
-<a href="create_guest/" target="_new">
-    <i class="bi bi-file-earmark-plus-fill"></i>
-</a>
